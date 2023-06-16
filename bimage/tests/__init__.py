@@ -1,1 +1,5 @@
-"""The tests package."""
+#! /usr/bin/env python
+
+"""
+The bimage.tests subpackage.
+"""

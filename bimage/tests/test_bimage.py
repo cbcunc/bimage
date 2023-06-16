@@ -1,4 +1,8 @@
-"""Tests for the bimage module."""
+#! /usr/bin/env python
+
+"""
+Tests for the bimage module.
+"""
 
 
 import unittest
@@ -24,4 +28,3 @@ class TestBimage(unittest.TestCase):
         """Test bimage.bimage."""
 
         self.assertTrue(os.path.exists("timage"))
-

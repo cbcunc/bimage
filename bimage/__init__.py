@@ -1,1 +1,5 @@
-"""The bimage package."""
+#! /usr/bin/env python
+
+"""
+The bimage package.
+"""

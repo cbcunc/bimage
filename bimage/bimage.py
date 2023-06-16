@@ -1,24 +1,27 @@
-"""The bimage module."""
+#! /usr/bin/env python
 
-import argparse
+"""
+The bimage module.
+"""
+
 import github3
 import git
 
 
+def bimage(github_org: str, repo_name: str, branch_or_tag: str):
+        """
+        The bimage function.
 
-def bimage(gitorg, reponame, branch_or_tag):
-        """The bimage function."""
+        Parameters:
+            github_org     The GitHub organization of the repository
+            repo_name      The name of the repository in the organization
+            branch_or_tag  The branch or tag of the repository
+
+        Returns: None
+        """
 
         gh = github3.GitHub()
-        repo = gh.repository(gitorg, reponame)
-        clone = git.Repo.clone_from(repo.clone_url, reponame)
+        repo = gh.repository(github_org, repo_name)
+        clone = git.Repo.clone_from(repo.clone_url, repo_name)
         clone.git.checkout(branch_or_tag)
-
-
-if __name__ == "__main__":
-        parser = argparse.ArgumentParser(description="Arguments for bimage.")
-        parser.add_argument("gitorg", nargs="?")
-        parser.add_argument("reponame", nargs="?")
-        parser.add_argument("branch_or_tag", nargs="?")
-        args = parser.parse_args()
-        bimage(args.gitorg, args.reponame, args.branch_or_tag)
+        return

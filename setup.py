@@ -1,6 +1,8 @@
 #! /usr/bin/env python
 
-"""Setup script for the bimage package."""
+"""
+Setup script for the bimage package.
+"""
 
 from setuptools import setup
 from setuptools import find_packages
@@ -29,7 +31,7 @@ def long_description():
 
 setup(name="bimage",
       version=__version__,
-      license="BSD",
+      license="BSD3",
       packages=find_packages(),
       author="Chris Calloway",
       author_email="cbc@chriscalloway.org",
