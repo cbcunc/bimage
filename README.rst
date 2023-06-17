@@ -11,14 +11,13 @@ To use as a package:
     >>>
 
 To use as a script:
-   usage: bimage.py [-h] [gitorg] [reponame] [branch_or_tag]
 
-   Arguments for bimage.
+    usage: bimage [-h] github_org repo_name branch_or_tag
 
-   positional arguments:
-     gitorg
-     reponame
-     branch_or_tag
+    positional arguments:
+        github_org     The GitHub organization of the repository
+        repo_name      The name of the repository in the organization
+        branch_or_tag  The branch or tag of the repository
 
-   options:
-     -h, --help     show this help message and exit
+    options:
+        -h, --help     show this help message and exit
