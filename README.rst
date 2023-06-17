@@ -15,9 +15,11 @@ To use as a script:
     usage: bimage [-h] github_org repo_name branch_or_tag
 
     positional arguments:
+        =============  ==============================================
         github_org     The GitHub organization of the repository
         repo_name      The name of the repository in the organization
         branch_or_tag  The branch or tag of the repository
+        =============  ==============================================
 
     options:
         -h, --help     show this help message and exit
