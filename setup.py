@@ -32,7 +32,7 @@ def long_description():
 setup(name="bimage",
       version=__version__,
       license="BSD3",
-      packages=find_packages(),
+      packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
       author="Chris Calloway",
       author_email="cbc@chriscalloway.org",
       description="Model package for building container images",
